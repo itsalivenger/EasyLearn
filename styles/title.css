@@ -1,0 +1,28 @@
+.lines{
+    width: 30%;
+    /* color: #ff9f0d; */
+    border: 3px solid var(--orange);
+}
+
+.titleColor{
+    color: var(--orange);
+}
+
+.titles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3em 0;
+    width: 100%;
+}
+
+@media (max-width: 600px){
+    .lines{
+        width: 20%;
+        border: 2px solid var(--orange);
+    }
+
+    .titleColor{
+        font-size: 20px;
+    }
+}

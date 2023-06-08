@@ -1,0 +1,31 @@
+.whyChooseUs{
+    display: flex;
+    padding: 2em;
+    gap: 2em;
+}
+
+.whyChooseUsContentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: right;
+    width: 60%;
+    gap: 1em;
+}
+
+.whyChooseUs p{
+    font-size: 20px;
+    color: var(--secondaryTextColor);
+}
+
+@media (max-width: 750px){
+    .whyChooseUs{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .whyChooseUsContentContainer, .aboutImgContainer{
+        width: 100%;
+    }
+}
