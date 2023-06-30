@@ -12,20 +12,12 @@
     gap: 1em;
 }
 
-.textAndStatsContainer button{
-    width: 30%;
-}
-
-.aboutImgContainer{
+.textAndStatsContainer button, .aboutImgContainer{
     width: 30%;
 }
 
 .aboutImgContainer img{
     border-radius: 20px;
-}
-
-.aboutButton{
-    background-color: var(--blue);
 }
 
 .statsContainer{
@@ -79,6 +71,11 @@
 .stat4{
     background-color: #ffc107;
     border-radius: 0 10px 10px 0;
+}
+
+.textAndStatsContainer p{
+    color: gray;
+    font-size: 20px;
 }
 
 @media (max-width: 750px){

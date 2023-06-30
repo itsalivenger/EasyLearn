@@ -1,0 +1,112 @@
+.SearchSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    padding: 4em 0;
+}
+
+.searchContentContainer{
+    border-radius: 10px;
+    background-color: white;
+    padding: 3em;
+    width: 60%;
+}
+
+.titleAndBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.searchInputContainer{
+    width: 100%;
+    padding: 1em;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.SearchBtn{
+    background-color: white;
+    outline: none;
+    border: var(--blue) solid 2px;
+    border-radius: 10px 0;
+    width: 15%;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.SearchBtn:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+.SearchBtn:active{
+    background-color: white;
+    color: black;
+}
+
+.searchInput{
+    width: 100%;
+    height: 2em;
+    border: none;
+    border-bottom: solid var(--blue) 2px;
+    font-size: larger;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.items:hover{
+    background-color: rgb(37, 150, 190, .7);
+    color: white;
+}
+
+.iconsInItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ItemsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.loadMoreBtnContainer{
+    margin-top: 2em;
+}
+
+@media (max-width: 760px){
+    .searchContentContainer{
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px){
+    .searchContentContainer{
+        padding: 1em;
+    }
+
+    .SearchBtn{
+        width: 20%;
+    }
+
+    .searchInput{
+        font-size: medium;
+    }
+}
